@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/card.gd" type="Script" id=1]
+[ext_resource path="res://sprites/cards/sword.png" type="Texture" id=2]
+
+[node name="Card" type="TextureRect"]
+anchor_right = 0.166667
+anchor_bottom = 0.333333
+rect_pivot_offset = Vector2( 12, 16 )
+texture = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

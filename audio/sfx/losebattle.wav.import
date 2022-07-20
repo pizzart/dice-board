@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/losebattle.wav-7bb83ad1183e85abaa1ca08a927b2078.sample"
+
+[deps]
+
+source_file="res://audio/sfx/losebattle.wav"
+dest_files=[ "res://.import/losebattle.wav-7bb83ad1183e85abaa1ca08a927b2078.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

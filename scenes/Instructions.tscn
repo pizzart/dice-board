@@ -1,0 +1,23 @@
+[gd_scene format=2]
+
+[node name="Instructions" type="RichTextLabel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 139.0
+margin_bottom = 62.0
+size_flags_vertical = 0
+bbcode_enabled = true
+bbcode_text = "[img]res://sprites/ui/keys/up_key.png[/img] [img]res://sprites/ui/keys/down_key.png[/img] [img]res://sprites/ui/keys/left_key.png[/img] [img]res://sprites/ui/keys/right_key.png[/img] move in ui
+
+[img]res://sprites/ui/keys/tab_key.png[/img] inventory
+
+[img]res://sprites/ui/keys/esc_key.png[/img] pause
+"
+text = "    move in ui
+
+ inventory
+
+ pause
+"
+fit_content_height = true
+scroll_active = false

@@ -1,0 +1,148 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://misc/font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scripts/inventory.gd" type="Script" id=2]
+[ext_resource path="res://scenes/NoneCard.tscn" type="PackedScene" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.239216, 0.160784, 0.211765, 1 )
+
+[node name="Inventory" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="M" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+custom_constants/margin_right = 3
+custom_constants/margin_top = 3
+custom_constants/margin_left = 3
+
+[node name="V" type="VBoxContainer" parent="M"]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 141.0
+margin_bottom = 96.0
+mouse_filter = 2
+custom_constants/separation = 4
+
+[node name="InventoryText" type="Label" parent="M/V"]
+margin_right = 138.0
+margin_bottom = 3.0
+size_flags_vertical = 0
+custom_fonts/font = ExtResource( 1 )
+text = "Inventory"
+align = 1
+
+[node name="Inventory" type="HBoxContainer" parent="M/V"]
+margin_top = 7.0
+margin_right = 138.0
+margin_bottom = 39.0
+mouse_filter = 2
+size_flags_vertical = 0
+alignment = 1
+
+[node name="NoneCard" parent="M/V/Inventory" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1.0
+margin_right = 25.0
+margin_bottom = 32.0
+
+[node name="NoneCard2" parent="M/V/Inventory" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 29.0
+margin_right = 53.0
+margin_bottom = 32.0
+
+[node name="NoneCard3" parent="M/V/Inventory" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 57.0
+margin_right = 81.0
+margin_bottom = 32.0
+
+[node name="NoneCard4" parent="M/V/Inventory" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 85.0
+margin_right = 109.0
+margin_bottom = 32.0
+
+[node name="NoneCard5" parent="M/V/Inventory" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 113.0
+margin_right = 137.0
+margin_bottom = 32.0
+
+[node name="EquippedText" type="Label" parent="M/V"]
+margin_top = 43.0
+margin_right = 138.0
+margin_bottom = 46.0
+size_flags_vertical = 0
+custom_fonts/font = ExtResource( 1 )
+text = "Equipped"
+align = 1
+
+[node name="Equipped" type="HBoxContainer" parent="M/V"]
+margin_top = 50.0
+margin_right = 138.0
+margin_bottom = 82.0
+mouse_filter = 2
+size_flags_vertical = 0
+alignment = 1
+
+[node name="NoneCard" parent="M/V/Equipped" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1.0
+margin_right = 25.0
+margin_bottom = 32.0
+
+[node name="NoneCard2" parent="M/V/Equipped" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 29.0
+margin_right = 53.0
+margin_bottom = 32.0
+
+[node name="NoneCard3" parent="M/V/Equipped" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 57.0
+margin_right = 81.0
+margin_bottom = 32.0
+
+[node name="NoneCard4" parent="M/V/Equipped" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 85.0
+margin_right = 109.0
+margin_bottom = 32.0
+
+[node name="NoneCard5" parent="M/V/Equipped" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 113.0
+margin_right = 137.0
+margin_bottom = 32.0
+
+[node name="Desc" type="Label" parent="M/V"]
+visible = false
+margin_top = 86.0
+margin_right = 138.0
+margin_bottom = 89.0
+text = "SWORD: +3ATK"
+
+[node name="Cards" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0

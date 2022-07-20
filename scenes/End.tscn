@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/end.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.239216, 0.160784, 0.211765, 1 )
+
+[node name="End" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="C" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+alignment = 1
+
+[node name="Label" type="Label" parent="C"]
+margin_top = 32.0
+margin_right = 144.0
+margin_bottom = 53.0
+text = "THANKS FOR PLAYING!
+
+
+this game features an endless mode"
+align = 1
+
+[node name="Buttons" type="HBoxContainer" parent="C"]
+margin_top = 57.0
+margin_right = 144.0
+margin_bottom = 64.0
+alignment = 1
+
+[node name="Endless" type="Button" parent="C/Buttons"]
+margin_left = 26.0
+margin_right = 75.0
+margin_bottom = 7.0
+text = "PLAY ENDLESS"
+
+[node name="Quit" type="Button" parent="C/Buttons"]
+margin_left = 79.0
+margin_right = 117.0
+margin_bottom = 7.0
+text = "QUIT GAME"
+
+[connection signal="pressed" from="C/Buttons/Endless" to="." method="_on_Endless_pressed"]
+[connection signal="pressed" from="C/Buttons/Quit" to="." method="_on_Quit_pressed"]

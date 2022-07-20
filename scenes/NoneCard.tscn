@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://sprites/cards/none.png" type="Texture" id=1]
+
+[node name="NoneCard" type="TextureRect"]
+anchor_right = 0.166667
+anchor_bottom = 0.333333
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/battle_low_hp.wav-6f796caa9cc5491adb641f2cc0656c7a.sample"
+
+[deps]
+
+source_file="res://audio/mus/battle_low_hp.wav"
+dest_files=[ "res://.import/battle_low_hp.wav-6f796caa9cc5491adb641f2cc0656c7a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
